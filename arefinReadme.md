@@ -1,6 +1,60 @@
 
 ## environment:
 
+
+## june 28_2021:
+
+
+## 0
+```python
+## sudo apt-get install python3-pip
+## taxi@taxi-HP-ProBook-4540s:~/Python-3.9.4$ whereis pip
+pip: /usr/bin/pip /home/taxi/.local/bin/pip /home/taxi/.local/bin/pip3.9 /usr/share/man/man1/pip.1.gz
+taxi@taxi-HP-ProBook-4540s:~/Python-3.9.4$ sudo apt-get install python3-pip
+
+
+
+```
+## 1
+```python
+taxi@taxi-HP-ProBook-4540s:~/Programs/Python-Image-to-PDF-convert$ python3 -m pip install --upgrade pillow
+Collecting pillow
+  Downloading Pillow-8.2.0-cp38-cp38-manylinux1_x86_64.whl (3.0 MB)
+     |████████████████████████████████| 3.0 MB 2.0 MB/s 
+Installing collected packages: pillow
+Successfully installed pillow-8.2.0
+taxi@taxi-HP-ProBook-4540s:~/Programs/Python-Image-to-PDF-convert$ 
+
+```
+
+## 2
+
+```python
+taxi@taxi-HP-ProBook-4540s:~/Programs/Python-Image-to-PDF-convert$ code .
+taxi@taxi-HP-ProBook-4540s:~/Programs/Python-Image-to-PDF-convert$ cd src/
+taxi@taxi-HP-ProBook-4540s:~/Programs/Python-Image-to-PDF-convert/src$ python convert.py 
+Traceback (most recent call last):
+  File "/home/taxi/Programs/Python-Image-to-PDF-convert/src/convert.py", line 1, in <module>
+    from PIL import Image
+  File "/home/taxi/.local/lib/python3.9/site-packages/PIL/Image.py", line 31, in <module>
+    import math
+ModuleNotFoundError: No module named 'math'
+taxi@taxi-HP-ProBook-4540s:~/Programs/Python-Image-to-PDF-convert/src$ python convert.py 
+Traceback (most recent call last):
+  File "/home/taxi/Programs/Python-Image-to-PDF-convert/src/convert.py", line 1, in <module>
+    from PIL import Image
+  File "/home/taxi/.local/lib/python3.9/site-packages/PIL/Image.py", line 31, in <module>
+    import math
+ModuleNotFoundError: No module named 'math'
+taxi@taxi-HP-ProBook-4540s:~/Programs/Python-Image-to-PDF-convert/src$ python3 convert.py 
+Done
+taxi@taxi-HP-ProBook-4540s:~/Programs/Python-Image-to-PDF-convert/src$ 
+
+```
+
+
+## old ## old ## old ## old ## old ## old ## old ## old
+
 ## python -V Python 3.9.4
 
 taxi@taxi-HP-ProBook-4540s:~/Programs/2021$ cd Python-Image-to-PDF-convert/
@@ -35,4 +89,3 @@ Collecting pillow
 Installing collected packages: pillow
 Successfully installed pillow-8.2.0
 taxi@taxi-HP-ProBook-4540s:~/Programs/2021/Python-Image-to-PDF-convert$ D
-
